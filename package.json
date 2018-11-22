@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "progress": "^2.0.1",
+    "youtube-mp3-downloader": "^0.5.3"
+  }
+}
