@@ -4,10 +4,12 @@ Node.Js + Alpine docker + [ytb2mp3/youtube-mp3-downloader lib](https://github.co
 
 ## Running
 
+Change `/your/path/to/mp3/output` to yout output path, `~/` are valid and insert the youtube video id.
+
 ```
 docker build . --tag youtube-downloader
 docker run --rm \
-    -v ~/Desktop/youtube-downloader/output:/app/output \
+    -v /your/path/to/mp3/output:/app/output \
     -e YOUTUBE_VIDEO_ID={ Put the youtube video id here } \
     youtube-downloader
 ```
@@ -18,7 +20,7 @@ Youtube video url [https://www.youtube.com/watch?v=60llTxTVIQw](https://www.yout
 
 ```
 docker run --rm \
-    -v ~/Desktop/youtube-downloader/output:/app/output \
+    -v /your/path/to/mp3/output:/app/output \
     -e YOUTUBE_VIDEO_ID=60llTxTVIQw \
     youtube-downloader
 ```
